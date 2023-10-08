@@ -17,6 +17,7 @@ def format_elem_num(elem_num):
 
 
 def handle_parentheses_group(compound_elements):
+    """Handles non-single chemical elements Ex: (OH)2"""
     new_compound_elements = []
     for elem_num in compound_elements:
         if elem_num[0] == '(':
